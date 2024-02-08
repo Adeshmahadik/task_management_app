@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wgt@100;200;300;400;500;600;700;800;900&family=Protest+Revolution&family=Raleway:wght@100&display=swap');
+
+
+/* //define text position */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* define flex */
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.start-start {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.start-end {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.start-center {
+  align-items: flex-start;
+  justify-content: center;
+}
+.start-between {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* ////// */
+.end-start {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.end-end {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.end-center {
+  align-items: flex-end;
+  justify-content: center;
+}
+.end-between {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* //center */
+.center-start {
+  align-items: center;
+  justify-content: flex-start;
+}
+.center-end {
+  align-items: center;
+  justify-content: flex-end;
+}
+.center-center {
+  align-items: center;
+  justify-content: center;
+}
+.center-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@100;200;300;400;500;600;700;800;900&family=Protest+Revolution&family=Raleway:wght@100&display=swap'); */
+
+.MainPage {
+    padding: 12px;
+    row-gap: 10px;
+}
+
+.AddTaskBtn {
+    border: none;
+    background: linear-gradient(315deg, #5078f2 0%, #b78fd8 74%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Orbitron', sans-serif; /* Fix syntax and add fallback sans-serif */
+}
+
+.AddTaskBtn:hover {
+    cursor: pointer;
+    border: none;
+    scale: 1.08;
+    background: linear-gradient(315deg, #b78fd8 0%, #5078f2 74%);
+    color: #efe9f4; /* Fix color property */
+}
+
+
+
