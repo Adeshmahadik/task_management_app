@@ -1,9 +1,11 @@
 import React from 'react'
 
-const index = () => {
+const ButttonComponent = ({text, handleClick}) => {
   return (
-    <div>index</div>
+    <button onClick={handleClick} type="button" className='AddTaskBtn'>
+    {text}
+   </button>
   )
 }
 
-export default index
+export default ButttonComponent
