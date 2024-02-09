@@ -1,25 +1,26 @@
 import React, { useState } from 'react';
 import "./MainPage.css";
 import ButttonComponent from '../Components/Button';
+import Modal from '../Components/Modal';
+import TaskInput from '../Components/Input';
 
 const MainPage = () => {
   const [showModal, setShowModal] = useState(false);
 
+  //define localstorage parameters
+
   return (
     <div className='MainPage flex-col start-center'>
       <div>
-        <ButttonComponent text="Add Task" handleClick={() => setShowModal(!showModal)} />
+        <ButttonComponent className={"AddTaskBtn"} text="Add Task" handleClick={() => setShowModal(!showModal)} />
       </div>
       <div>
         mainContainerSection
       </div>
       {showModal &&
-        <div className="modal-container">
-          <div className="modal-content">
-            <span className="close" onClick={() => setShowModal(!showModal)}>&times;</span>
-            <p>Modal content here</p>
-          </div>
-        </div>
+        <Modal setShowModal={setShowModal} showModal={showModal}>
+          <TaskInput setShowModal={setShowModal} />
+        </Modal>
       }
     </div>
   );
