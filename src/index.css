@@ -7,3 +7,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* For Webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  border-radius: 12px;
+  width: 2px; /* Set the width of the scrollbar */
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background: #9ad0df; /* Set the color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9db1ef;
+  border-radius: 12px; /* Set the color of the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1a4fed; /* Set the color of the thumb on hover */
+}
