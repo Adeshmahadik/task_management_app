@@ -6,7 +6,7 @@ import TaskInput from '../Components/Input';
 
 const MainPage = () => {
   const [showModal, setShowModal] = useState(false);
-const todoData = localStorage.getItem("TasksTodo");
+const todoData = JSON.parse(localStorage.getItem("savedItem"));
 console.log(todoData, "todoData");
   //define localstorage parameters
 
@@ -20,7 +20,7 @@ console.log(todoData, "todoData");
       </div>
       {showModal &&
         <Modal setShowModal={setShowModal} showModal={showModal}>
-          <TaskInput setShowModal={setShowModal} />
+          <TaskInput prevTask={todoData ? todoData :[]} setShowModal={setShowModal} />
         </Modal>
       }
     </div>
