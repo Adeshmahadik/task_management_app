@@ -3,6 +3,7 @@ import "./MainPage.css";
 import ButttonComponent from '../Components/Button';
 import Modal from '../Components/Modal';
 import TaskInput from '../Components/Input';
+import Container from '../Components/Container';
 
 const MainPage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -16,7 +17,9 @@ console.log(todoData, "todoData");
         <ButttonComponent className={"AddTaskBtn"} text="Add Task" handleClick={() => setShowModal(!showModal)} />
       </div>
       <div>
-        mainContainerSection
+        <Container>
+          <div>data</div>
+        </Container>
       </div>
       {showModal &&
         <Modal setShowModal={setShowModal} showModal={showModal}>
