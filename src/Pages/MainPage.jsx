@@ -6,7 +6,8 @@ import TaskInput from '../Components/Input';
 
 const MainPage = () => {
   const [showModal, setShowModal] = useState(false);
-
+const todoData = localStorage.getItem("TasksTodo");
+console.log(todoData, "todoData");
   //define localstorage parameters
 
   return (

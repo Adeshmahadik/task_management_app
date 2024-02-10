@@ -32,11 +32,14 @@ const TaskInput = ({ setShowModal }) => {
       const newTask = { text: taskText, dueDate };
       savedTasks.push(newTask);
       localStorage.setItem('tasks', JSON.stringify(savedTasks));
+      
 
       console.log('Task saved:', newTask);
       setShowModal(false);
     }
   };
+
+  const currentDate = new Date();
 
   return (
     <div className='add_Task_Section '>
@@ -53,6 +56,7 @@ const TaskInput = ({ setShowModal }) => {
         {showErr && <span className='error'>!Please enter field</span>}
         <label>Due Date</label>
         <input
+        minDate={currentDate}
           type="date"
           placeholder="select date"
           value={dueDate}
