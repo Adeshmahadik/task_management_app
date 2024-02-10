@@ -12,6 +12,16 @@ const Container = ({cardData, title}) => {
 <div className='titleSection'>
 <p> <span className='totlanoVal'>{data?.length} </span>{title}</p>
 </div>
+<div>
+  {data.map((data, index) => (
+      <div className='cardSection' key={data?.id}>
+        <p><span>{index}</span> {data?.status}</p>
+       <p> {data?.text}</p>
+       <p>Valid till : {data?.date} </p>
+     
+      </div>
+  ))}
+</div>
     </div>
   )
 }
