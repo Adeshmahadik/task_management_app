@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ButttonComponent from '../Button';
+import toast, {Toaster} from "react-hot-toast";
 
 const TaskInput = ({ prevTask = [], setShowModal }) => {
   const [taskData, setTaskData] = useState({ id: "", text: "", status: "Todo", date: "" });
@@ -20,6 +21,15 @@ const TaskInput = ({ prevTask = [], setShowModal }) => {
       id: currentDate,
       status: "todo",
     };
+    if(newData.text === "" && newData.date === "" ){
+    toast.error("Please Enter task & select date")
+    } else if(newData.text === ""){
+      toast.error("Please Enter task")
+    } else if(newData.date === "") {
+      toast.error("please Select a date")
+    } else {
+toast.success("all data submitted successfully")
+    }
     const submitData = [...prevTask, newData]
     localStorage.setItem("savedItem", JSON.stringify(submitData))
     setTaskData(newData);
