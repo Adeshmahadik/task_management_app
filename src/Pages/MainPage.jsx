@@ -7,8 +7,8 @@ import Container from '../Components/Container';
 
 const MainPage = () => {
   const [showModal, setShowModal] = useState(false);
-const todoData = JSON.parse(localStorage.getItem("savedItem"));
-console.log(todoData, "todoData");
+const AllStoredData = JSON.parse(localStorage.getItem("savedItem"));
+console.log(AllStoredData, "AllStoredData");
   //define localstorage parameters
 
   return (
@@ -17,13 +17,14 @@ console.log(todoData, "todoData");
         <ButttonComponent className={"AddTaskBtn"} text="Add Task" handleClick={() => setShowModal(!showModal)} />
       </div>
       <div>
-        <Container>
-          <div>data</div>
-        </Container>
+        <Container title="todo" cardData={AllStoredData} />
+        <Container title="In progress" cardData={AllStoredData} />
+        <Container title="Done" cardData={AllStoredData} />
+        
       </div>
       {showModal &&
         <Modal setShowModal={setShowModal} showModal={showModal}>
-          <TaskInput prevTask={todoData ? todoData :[]} setShowModal={setShowModal} />
+          <TaskInput prevTask={AllStoredData ? AllStoredData :[]} setShowModal={setShowModal} />
         </Modal>
       }
     </div>
