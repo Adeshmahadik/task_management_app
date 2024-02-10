@@ -180,6 +180,7 @@ font-weight: 500;
     padding-left: 6px;
     padding-right: 6px;
     background: linear-gradient(315deg, #84a1f0 0%, #bbbfca 74%);
+    cursor: pointer;
   }
 
 
