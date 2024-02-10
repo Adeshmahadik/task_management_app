@@ -115,4 +115,79 @@ font-family: 'Orbitron', sans-serif;
   }
 
 
+  .children_Section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+  }
+
+  .container_section {
+    position: relative;
+padding: 10px;
+width: 100%;
+border-radius: 5px;
+background: #9ad0df;
+height: max-content;
+max-height: 77vh;
+overflow: auto;
+font-size: 10px;
+font-weight: 500;
+
+  }
+
+  .container_section_child .titleSection {
+    background: #84a1f0;
+    height: max-content;
+    padding: 8px;
+    /* padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px; */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .titleSection .totalnoVal{
+    background: rgb(197, 214, 230);
+    width: max-content;
+    height: max-content;
+    padding: 4px;
+    display: block;
+    border-radius: 12px;
+    text-align: center;
+  
+  }
+
+  .container_section_child .cardSection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .card{
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: linear-gradient(315deg, #84a1f0 0%, #bbbfca 74%);
+  }
+
+
+  .card .value_and_status{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  height: max-content;
+  }
+
 

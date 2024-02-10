@@ -16,7 +16,7 @@ console.log(AllStoredData, "AllStoredData");
       <div>
         <ButttonComponent className={"AddTaskBtn"} text="Add Task" handleClick={() => setShowModal(!showModal)} />
       </div>
-      <div>
+      <div className='children_Section'>
         <Container title="todo" cardData={AllStoredData} />
         <Container title="In progress" cardData={AllStoredData} />
         <Container title="Done" cardData={AllStoredData} />
