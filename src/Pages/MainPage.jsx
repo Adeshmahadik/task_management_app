@@ -41,7 +41,8 @@ const MainPage = () => {
   useEffect(() => {
     if(dropData !== null) {
      const arrayOfObjects = updateStatusById(AllStoredData, dropData.id, dropData.title);
-     localStorage.setItem("savedItem", JSON.stringify(arrayOfObjects))
+     localStorage.setItem("savedItem", JSON.stringify(arrayOfObjects));
+     setDropData(null)
     }
   
   }, [dropData])
