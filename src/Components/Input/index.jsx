@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ButttonComponent from '../Button';
-import toast, {Toaster} from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const TaskInput = ({ prevTask = [], setShowModal }) => {
   const [taskData, setTaskData] = useState({ id: "", text: "", status: "Todo", date: "" });
@@ -33,7 +33,6 @@ toast.success("all data submitted successfully")
     const submitData = [...prevTask, newData]
     localStorage.setItem("savedItem", JSON.stringify(submitData))
     setTaskData(newData);
-    console.log(newData);
     setShowModal(false);
   };
   

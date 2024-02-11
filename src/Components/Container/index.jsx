@@ -17,15 +17,9 @@ const Container = ({ cardData, setDropData, setdeleteData, title }) => {
     }),
   }));
 
-  console.log(isOver, "isOver");
 
   const addItemToSection = (id) => {
-    console.log("dropped", id, "efefer", title);
     setDropData({id: id, title: title})
-
-    // Find the index of the object with id 1
-
-    // You can use the index to perform the necessary logic when an item is dropped
   };
 
   return (
@@ -53,7 +47,6 @@ const Container = ({ cardData, setDropData, setdeleteData, title }) => {
 const Card = ({ card, setdeleteData, index }) => {
 
   const id = card?.id;
-  console.log(id, "ffff");
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "task",
     item: { id },
@@ -62,7 +55,6 @@ const Card = ({ card, setdeleteData, index }) => {
     }),
   }));
 
-  console.log(isDragging, "isDragging");
 
   return (
     <div ref={drag} className="card">

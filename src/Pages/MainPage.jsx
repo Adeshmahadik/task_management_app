@@ -10,7 +10,6 @@ const MainPage = () => {
   const [deleteData, setdeleteData] = useState("");
   const [dropData, setDropData] = useState(null);
   const AllStoredData = JSON.parse(localStorage.getItem("savedItem")) || [];
-  console.log(AllStoredData, "AllStoredData");
 
   const statusTypes = ["todo", "inprogress", "done"];
 
