@@ -66,7 +66,7 @@ const Card = ({ card, setdeleteData, index }) => {
           <IoIosRemoveCircleOutline />
         </div>
       </div>
-      <p>{card.text}</p>
+      <p style={{fontSize: "16px"}}>{card.text}</p>
       <p>Valid till : {card.date} </p>
     </div>
   );
