@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useDrag, useDrop } from "react-dnd";
-import { IoIosRemoveCircleOutline } from "react-icons/io";
+import { useDrop } from "react-dnd";
+import Card from "../Card";
+
 
 const Container = ({ cardData, setDropData, setdeleteData, title }) => {
   const [data, setData] = useState(cardData);
@@ -44,32 +45,5 @@ const Container = ({ cardData, setDropData, setdeleteData, title }) => {
   );
 };
 
-const Card = ({ card, setdeleteData, index }) => {
-
-  const id = card?.id;
-  const [{ isDragging }, drag] = useDrag(() => ({
-    type: "task",
-    item: { id },
-    collect: (monitor) => ({
-      isDragging: monitor.isDragging(),
-    }),
-  }));
-
-
-  return (
-    <div ref={drag} className="card">
-      <div className="value_and_status flex-row center-between">
-        <p>
-          <span>{index + 1}</span> {card.status}
-        </p>
-        <div className="" onClick={() => setdeleteData(card.id)}>
-          <IoIosRemoveCircleOutline />
-        </div>
-      </div>
-      <p style={{fontSize: "16px"}}>{card.text}</p>
-      <p>Valid till : {card.date} </p>
-    </div>
-  );
-};
 
 export default Container;
