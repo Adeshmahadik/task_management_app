@@ -3,7 +3,8 @@ Hello Visitor,
 
 following are the details About this application.
 
-Project Name: Task Management App
+Project Name: Task Management App;
+live project URL: https://task-management-app-adeshmahadik.vercel.app/
 
 Short Summary: Organise and track your tasks efficiently with this React-based application. Create, manage, and drag-and-drop tasks between "To Do," "In Progress," and "Done" stages, ensuring you stay on top of your workload.
 
@@ -17,7 +18,8 @@ react-dnd for drag-and-drop functionality
 react-icons for icons
 Styling: CSS
 Fonts: Google Fonts
-Storage: LocalStorage
+Storage: LocalStorage,
+deployment: vercel
 
 Installation and Usage:
 
