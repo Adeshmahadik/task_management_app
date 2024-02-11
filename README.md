@@ -1,70 +1,69 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello Visitor,
 
-## Available Scripts
+following are the details About this application.
 
-In the project directory, you can run:
+Project Name: Task Management App
 
-### `npm start`
+Short Summary: Organize and track your tasks efficiently with this React-based application. Create, manage, and drag-and-drop tasks between "To Do," "In Progress," and "Done" stages, ensuring you stay on top of your workload.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technology Stack:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Language: JavaScript
+library: ReactJS
+Libraries:
+react-hot-toast for notifications
+react-dnd for drag-and-drop functionality
+react-icons for icons
+Styling: CSS
+Fonts: Google Fonts
+Storage: LocalStorage
 
-### `npm test`
+Installation and Usage:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+please follow the instruction of following docs to clone repository.
+doc: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. once clone done move to Task-Management-App using command cd "task-management-app";
+3. install all the dependancies using "npm install" or "npm i"
+4. once succssfully node packages install, use command "npm strt" to start server.
+5. your server will be start at "http://localhost:3000" in your default browser or you can simply paste this url in any of your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Key Features:
 
-### `npm run eject`
+1. Modern and Intuitive Interface: Built with React for a smooth and interactive experience.
+2. Easy Task Creation: Quickly add tasks with due dates and names using the dedicated "Add Task" button.
+3. Visual Organization: Tasks are grouped into clear "To Do," "In Progress," and "Done" stages for effortless prioritization.
+4. Flexible Drag-and-Drop: Reassign tasks to different stages by seamlessly dragging and dropping them with the react-dnd library.
+5. Persistent Data Storage: Leverages localStorage to securely save your tasks, even after application restarts.
+6. Clean and Customizable Styling: Customize the app's appearance using CSS to match your preferences.
+7. Clear and Simple Functionality: Focused on essential task management features for user-friendliness.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Steps To use:
+1. Application is based on reactJs. for styling we used css.
+2. by clicking on Add task button. Add task popu will be come. user can feed their estimated due date and task name at input and store it by clicking on Add task button.
+3. All the data will be stored in localstorage to access.
+4. we have define 3 stages. 
+a. Todo
+b. in progress
+c. done
+5. By default, all the created task will be shown in todo.
+5. user can drga and drop the todo from one stage to another as per need. for drag and drop feature we used package called "react-dnd".
+6. also it has feature to delete task. user can be delete the task by clicking on delete button
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thank you for reading till end.
 
-## Learn More
+Who I am?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Hello, i am Adesh Mahadik, A passionate frontend developer with more than 1.5 years of expernice in web developement with stacks like javascript, typescript, reactJs, nextJs, hooks, tailwindcss, mui, antd and many more to develop visually appealing, robust, fast and reliable frontend deliver to users.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+feel free to connect with me through:
++9619234862
+adeshmhadikcool12@gmail.com.
