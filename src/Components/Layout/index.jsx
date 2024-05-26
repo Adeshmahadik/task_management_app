@@ -4,16 +4,16 @@ import './style.css';
 const Layout = ({ children }) => {
   return (
     <div className="container">
-      <header className="header">
+      <header id="header" className="header">
         <div className='title flex-row start-start'>
-          TaskWe
+          TaskWe     
         </div>
       </header>
       <main className="main">
       <div className='children'>{children}</div>
       </main>
       <footer className="footer">
-       Developed by Adesh Mahadik
+       Developed by Adesh S. Mahadik
       </footer>
     </div>
   );

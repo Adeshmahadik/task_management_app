@@ -22,7 +22,7 @@ const TaskInput = ({ prevTask = [], setShowModal }) => {
       status: "todo",
     };
     if(newData.text === "" && newData.date === "" ){
-    toast.error("Please Enter task & select date")
+    toast.error("Please Enter task & select date and inform")
     } else if(newData.text === ""){
       toast.error("Please Enter task")
     } else if(newData.date === "") {
